@@ -13,7 +13,8 @@ while True:
 print(numbers)
 
 #Sorts list
-numbers = numbers.sort()
+numbers.sort()
+
 
 #if list has only 1 element
 if len(numbers) == 1:
@@ -25,7 +26,7 @@ if len(numbers) % 2 == 1 and len(numbers) > 1:
     print(numbers[index])
 else:
     #list has an even number of elements
-    index = len(numbers) / 2
+    index = int(len(numbers) / 2)
     median = (numbers[index] + numbers[index-1]) / 2
     print(median)
 
